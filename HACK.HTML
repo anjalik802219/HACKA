@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce Rate Prediction</title>
+    <link rel="stylesheet" href="HACK.CSS">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <div class="container">
+        <h1>Divorce Rate Prediction</h1>
+        <form id="prediction-form">
+            <label for="years-age">Years Age:</label>
+            <input type="number" id="years-age" name="years-age" required><br>
+
+            <label for="years-married">Years Married:</label>
+            <input type="number" id="years-married" name="years-married" required><br>
+
+            <label for="children">Number of Children:</label>
+            <input type="number" id="children" name="children"><br>
+
+            <label for="education-level">Education Level:</label>
+            <select id="education-level" name="education-level">
+                <option value="high-school">High School</option>
+                <option value="bachelors">Bachelor's</option>
+                <option value="masters">Master's</option>
+                <option value="phd">PhD</option>
+            </select><br>
+
+            <button type="submit">Predict</button>
+        </form>
+        <div id="prediction-result"></div>
+    </div>
+    <script src="HACK.JS"></script>
+</body>
+</html>
